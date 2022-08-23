@@ -14,3 +14,11 @@ dataset = tf.keras.utils.get_file("aclImdb_v1", url,
   cache_subdir='')
 
 dataset_dir = os.path.join(os.path.dirname(dataset), 'aclImdb')
+os.listdir(dataset_dir)
+train_dir = os.path.join(dataset_dir, 'train')
+os.listdir(train_dir)
+
+#Lets check we've correctly downloaded the data and look at a review
+# sample_file = os.path.join(train_dir, 'pos/1181_9.txt')
+# with open(sample_file) as f:
+#   print(f.read())
